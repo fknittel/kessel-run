@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "postinstall": "cd lib/webapp-lambda && npm install"
+    "postinstall": "cd lib/webapp-lambda && npm ci"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.80.0",

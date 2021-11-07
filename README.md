@@ -34,7 +34,7 @@ $ export AWS_REGION=...
 Finally, run:
 
 ```
-$ npm install
+$ npm ci
 $ npx cdk bootstrap   # this only needs to be done once
 $ npm run build && npx cdk deploy
 ```
