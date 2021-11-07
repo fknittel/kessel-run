@@ -34,7 +34,9 @@ $ export AWS_REGION=...
 Finally, run:
 
 ```
-$ npx instacdk deploy rix0rrr/kessel-run
+$ npm install
+$ npx cdk bootstrap   # this only needs to be done once
+$ npm run build && npx cdk deploy
 ```
 
 The command will run for a while, and finally spit out a URL. Visit that URL in your browser to
@@ -43,7 +45,7 @@ get the IP address, admin password for initial RDP setup, and start/stop the ins
 To get rid of everything created by this application, run:
 
 ```
-$ npx instacdk manage
+$ npx cdk destroy
 ```
 
 Or log in to the CloudFormation console and delete the **KesselRunStack** stack.
